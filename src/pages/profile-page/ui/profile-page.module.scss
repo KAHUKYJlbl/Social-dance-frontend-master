@@ -1,0 +1,16 @@
+.events-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  @media all and (max-width: 600px) {
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: flex-start;
+
+    &-button {
+      width: 100%;
+    }
+  }
+}

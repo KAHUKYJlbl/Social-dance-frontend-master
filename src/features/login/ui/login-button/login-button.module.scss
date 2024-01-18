@@ -1,0 +1,13 @@
+.profile-button {
+  padding: 10px 12px;
+  color: var(--accent);
+  background-color: var(--purple-light);
+  border-radius: 50%;
+  transition: all var(--transition-semi);
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+    background-color: var(--accent);
+  }
+}

@@ -1,0 +1,31 @@
+.events-list-wrapper {
+  text-align: center;
+
+  .total {
+    margin-bottom: 15px;
+  }
+
+  .events-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: fit-content;
+    margin: 0 auto;
+
+    @media all and (max-width: 1240px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media all and (max-width: 940px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media all and (max-width: 620px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .show-more-btn {
+    margin-top: 40px;
+  }
+}

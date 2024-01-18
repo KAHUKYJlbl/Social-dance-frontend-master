@@ -1,0 +1,30 @@
+.menu {
+  position: relative;
+
+  &-list {
+    position: absolute;
+    z-index: 300;
+    display: none;
+    gap: 10px;
+    width: 180px;
+    padding: 10px 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(44, 44, 44, 0.06);
+
+    &-item {
+      padding: 10px;
+      cursor: pointer;
+      transition: all var(--transition-semi);
+
+      &:hover {
+        color: var(--accent);
+      }
+    }
+  }
+
+  &-list-show {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+.radio-wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+  opacity: 0;
+}
+
+.radio-icon {
+  width: 20px;
+  height: 20px;
+}

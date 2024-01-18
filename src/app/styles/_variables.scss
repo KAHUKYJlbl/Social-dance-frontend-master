@@ -1,0 +1,52 @@
+:root {
+  // font
+  --font-family: 'Montserrat', serif;
+
+  // в макетах используется формулировка типа: /* Body Small */, /* Caption */
+  // чтобы было проще ориентироваться, имена дал такие же, но с пометкой font
+  --font-button-large: 600 16px / 120% var(--font-family);
+  --font-button-small: 600 14px / 140% var(--font-family);
+  --font-body-small: 500 16px / 145% var(--font-family);
+  --font-caption: 500 14px / 140% var(--font-family);
+  --font-caption-small: 500 13px / 140% var(--font-family);
+  --font-desktop-h2: 700 30px / 120% var(--font-family);
+  --font-desktop-h3: 700 24px / 120% var(--font-family);
+  --font-desktop-h4: 600 22px / 140% var(--font-family);
+  --font-tablet-h2: 700 26px / 120% var(--font-family);
+  --font-tablet-h3: 700 22px / 120% var(--font-family);
+  --font-tablet-h4: 600 20px / 140% var(--font-family);
+  --font-mobile-h2: 700 24px / 120% var(--font-family);
+  --font-mobile-h3: 700 20px / 120% var(--font-family);
+  --font-mobile-h4: 600 18px / 140% var(--font-family);
+
+  // colors
+  --white: #fff;
+  --black: #2c2c2c;
+  --accent: #6d30cf;
+  --accent-light: #9655ff;
+  --purple-light: #eceafc;
+  --purple-fill: #f6f4fe;
+  --gray: #717171;
+  --gray-fill: #e7e7e7;
+  --gray-fill-light: #f5f5f5;
+  --success: #2c916f;
+  --error: #cf2424;
+  --overlay: rgba(44, 44, 44, 0.44);
+
+  // sizes
+  --header-height: 90px;
+  --footer-height: 80px;
+  --nav-max-height: 60px;
+
+  // disabled
+  --opacity-disabled: 0.7;
+
+  // transitions
+  --transition-fast: 0.1s linear;
+  --transition-semi: 0.15s linear;
+  --transition-slow: 0.2s linear;
+
+  // z-indexes
+  --z-header: 100;
+  --z-modal: 200;
+}

@@ -1,0 +1,55 @@
+.text-wrap {
+  color: var(--black);
+
+  .text {
+    white-space: pre-wrap;
+  }
+}
+
+h2 {
+  font: var(--font-desktop-h2);
+
+  @media all and (max-width: 768px) {
+    font: var(--font-tablet-h2);
+  }
+
+  @media all and (max-width: 375px) {
+    font: var(--font-mobile-h2);
+  }
+}
+
+h3 {
+  font: var(--font-desktop-h3);
+
+  @media all and (max-width: 768px) {
+    font: var(--font-tablet-h3);
+  }
+
+  @media all and (max-width: 375px) {
+    font: var(--font-mobile-h3);
+  }
+}
+
+h4 {
+  font: var(--font-desktop-h4);
+
+  @media all and (max-width: 768px) {
+    font: var(--font-tablet-h4);
+  }
+
+  @media all and (max-width: 375px) {
+    font: var(--font-mobile-h4);
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}

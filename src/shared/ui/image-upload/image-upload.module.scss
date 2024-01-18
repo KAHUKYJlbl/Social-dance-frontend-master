@@ -1,0 +1,84 @@
+.upload {
+  &-result {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background-color: var(--purple-fill);
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    &-remove {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &-button {
+    position: absolute;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  &-button + label {
+    padding: 15px 30px;
+    color: var(--accent);
+    font: var(--font-button-large);
+    text-align: center;
+    background: var(--white);
+    border: 1px solid transparent;
+    border-color: var(--accent);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background, bordercolor, color, var(--transition-semi);
+
+    &:hover,
+    &:focus {
+      background: var(--purple-light);
+      border-color: var(--purple-light);
+    }
+
+    @media all and (max-width: 768px) {
+      padding: 10px 25px;
+      font: var(--font-button-small);
+    }
+  }
+}
+
+.modal {
+  &-preview {
+    width: 565px;
+    height: 415px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    span {
+      outline-color: var(--gray-fill) !important;
+    }
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+    }
+
+    @media all and (max-width: 400px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    @media all and (max-width: 400px) {
+      flex-direction: column;
+      align-items: unset;
+      justify-content: unset;
+    }
+  }
+}

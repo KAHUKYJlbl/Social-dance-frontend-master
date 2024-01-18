@@ -1,0 +1,10 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 10px;
+  font: var(--font-caption);
+  text-transform: lowercase;
+  background: var(--purple-light);
+  border-radius: 8px;
+}

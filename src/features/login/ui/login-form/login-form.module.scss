@@ -1,0 +1,55 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 450px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: auto;
+  }
+
+  .input-password-wrapper {
+    margin-top: 10px;
+  }
+
+  .input-password + button {
+    color: var(--gray);
+    transition: color var(--transition-semi);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  .forget-password {
+    margin-top: 5px;
+    color: var(--gray);
+    font: var(--font-caption);
+    cursor: pointer;
+    transition: color var(--transition-semi);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+
+  &-submit {
+    margin-top: 15px;
+  }
+
+  .reset {
+    padding: 0;
+    color: var(--gray);
+    font: var(--font-caption);
+    background: none;
+    transition: color var(--transition-semi);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}

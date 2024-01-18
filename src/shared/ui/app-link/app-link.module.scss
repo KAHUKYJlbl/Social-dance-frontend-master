@@ -1,0 +1,11 @@
+.link {
+  transition: color 0.15s linear;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.active {
+  color: var(--accent);
+}

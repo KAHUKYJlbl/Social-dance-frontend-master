@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  z-index: var(--z-modal);
+  inset: 0;
+}
+
+.overlay {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay);
+  place-items: center;
+}
+
+.content {
+  position: relative;
+  padding: 50px 40px 40px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(44, 44, 44, 0.06);
+}
+
+.close-button {
+  position: absolute;
+  top: 17.5px;
+  right: 17.5px;
+  color: var(--gray);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-semi);
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+}
